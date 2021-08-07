@@ -1,1 +1,11 @@
-ramen
+<section class="section mt-6">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-5">
+        <% @ramen_shops.each do |ramen_shop| %>
+          <%= ramen_shop.name %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
