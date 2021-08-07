@@ -1,0 +1,2 @@
+class RamenShopsController < ApplicationController
+end
