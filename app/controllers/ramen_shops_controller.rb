@@ -12,6 +12,10 @@ class RamenShopsController < ApplicationController
     redirect_to ramen_shops_path
   end
 
+  def show
+    @ramen_shop = RamenShop.find(params[:id])
+  end
+
 
 
 
