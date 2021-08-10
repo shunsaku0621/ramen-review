@@ -1,1 +1,0 @@
-const stars = document.querySelector(".rathings")
