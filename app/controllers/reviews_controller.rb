@@ -1,5 +1,7 @@
 class ReviewsController < ApplicationController
   def index
+    @ramen_shop = RamenShop.find(params[:ramen_shop_id])
+    @reviews = @ramen_shop.reviews
   end
 
 
@@ -18,4 +20,5 @@ class ReviewsController < ApplicationController
   def review_params
     params.require(:review).permit(:ramen_shop_id, :score, :conent)
   end
+
 end
