@@ -2,6 +2,17 @@ crumb :root do
   link "Home", root_path
 end
 
+
+crumb :ramen_shops do
+  link "ラーメン店一覧", ramen_shops_path
+  parent :root
+end
+
+crumb :reviews do
+  link "レビュー 一覧", ramen_shop_reviews_path
+  parent :ramen_shops
+end
+
 # crumb :projects do
 #   link "Projects", projects_path
 # end
